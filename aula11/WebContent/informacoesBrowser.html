@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<!-- <head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+	<script type="text/javascript">
+		  document.write("Browser: " + navigator.appName);
+		  document.write("<br /><br />");
+		  document.write("Versão do Browser: " + navigator.appVersion);
+		  document.write("<br /><br />");
+		  document.write("Cookies habilitados: " + navigator.cookieEnabled);
+		  document.write("<br /><br />");
+		  document.write("Plataforma: " + navigator.platform);
+	</script>
+</head>
+<body>
+
+</body> -->
+
+<head>
+		<script type="text/javascript">
+			function goBack2(){
+			  window.history.go(-2)
+			}
+			function goBack(){
+			  window.history.back()
+			}
+			function goForward(){
+			  window.history.forward()
+			}
+		</script>
+	</head>
+	<body>
+		<input type="button" value="Voltar 2 página" onclick="goBack2()" />
+		<input type="button" value="Voltar 1 página" onclick="goBack()" />
+		<input type="button" value="Prosseguir 1 página" onclick="goForward()" />
+	</body>
+</html>
